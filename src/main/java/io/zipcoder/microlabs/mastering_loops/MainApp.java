@@ -1,12 +1,13 @@
 package io.zipcoder.microlabs.mastering_loops;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 //Created by leon on 1/31/18.
 
 public class MainApp {
     public static void main(String[] args) {
-        String evenNum = NumberUtilities.getEvenNumbers(2, 20);
+        /* String evenNum = NumberUtilities.getEvenNumbers(2, 20);
         System.out.println(evenNum);
 
         String oddNum = NumberUtilities.getOddNumbers(2, 20);
@@ -29,5 +30,11 @@ public class MainApp {
 
         String triangleRows = TriangleUtilities.getTriangle(5);
         System.out.println(triangleRows);
+
+        String multiplicationTable = TableUtilities.getMultiplicationTable(5);
+        System.out.println(multiplicationTable);*/
+
+        String table = TableUtilities.getMultiplicationTable(5);
+        System.out.println(table);
     }
 }

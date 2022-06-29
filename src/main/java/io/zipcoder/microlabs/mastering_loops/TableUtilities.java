@@ -25,6 +25,16 @@ public class TableUtilities {
     }
 
     public static String getMultiplicationTable(int tableSize) {
-        return null;
+        String multiTable = "";
+        for (int i = 1; i <= tableSize; i++) {
+            String row = ""; // resets the row
+            for (int j = 1; j <= tableSize; j++) {
+                int multi = i * j;
+                row += " " + multi + " |";
+            }
+            multiTable += row + "\n";
+        }
+        return multiTable;
     }
+
 }

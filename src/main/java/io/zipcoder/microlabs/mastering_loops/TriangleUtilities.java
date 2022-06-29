@@ -4,23 +4,26 @@ public class TriangleUtilities {
 
     public static String getTriangle(int numberOfRows) {
         String triangleRows = "";
-        for (int i = 0; i < numberOfRows; i++) {
-            for (int j = 0; j < numberOfRows; j++) {
-                triangleRows += "*";
-            }
+        // The number of rows determines the triangle size
+        for (int i = 1; i <= numberOfRows; i++) {
+            triangleRows += getRow(i) + "\n";
         }
         return triangleRows;
     }
 
     public static String getRow(int numberOfStars) {
-        return null;
+        String stars = "";
+        for (int i = 0; i < numberOfStars; i++) {
+            stars += "*";
+        }
+        return stars;
     }
 
     public static String getSmallTriangle() {
-        return null;
+        return TriangleUtilities.getTriangle(4);
     }
 
     public static String getLargeTriangle() {
-        return null;
+        return TriangleUtilities.getTriangle(10);
     }
 }
